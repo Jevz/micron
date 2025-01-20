@@ -84,7 +84,7 @@
                 statusMessage.textContent = "Processing...";
                 statusMessage.className = "widget-tailwind text-blue-500 mt-3 text-sm";
 
-                fetch(`${baseUrl}/pay`, {
+                fetch(`${baseUrl}/api/pay`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ user, amount, currency })

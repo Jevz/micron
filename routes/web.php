@@ -14,6 +14,4 @@ Route::view('profile', 'profile')
 
 Route::view('/test', 'test-page');
 
-Route::post('/pay', [PaymentController::class, 'processPayment'])->middleware();
-
 require __DIR__.'/auth.php';
