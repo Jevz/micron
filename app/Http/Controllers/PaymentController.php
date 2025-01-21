@@ -11,7 +11,6 @@ class PaymentController extends Controller
         $validated = $request->validate([
             'user' => 'required|string',
             'amount' => 'required|numeric|min:1',
-            'currency' => 'required|string',
         ]);
 
         // Simulate payment processing (replace with real payment logic)
